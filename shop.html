@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop | Balghari Store</title>
+<meta name="description" content="Browse and filter computer accessories by category, price and rating.">
+<meta name="keywords" content="computer accessories, mouse, keyboard, SSD, hard drive, headphones, webcam, gaming, Balghari Store">
+<meta property="og:title" content="Shop | Balghari Store">
+<meta property="og:description" content="Browse and filter computer accessories by category, price and rating.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header id="siteHeader" class="site-header"></header>
+<main id="main">
+<section class="container section"><h1>Shop</h1>
+<div class="shop-layout"><aside class="filters card" aria-label="Product filters">
+<label for="q">Search</label><input id="q" type="search" placeholder="Search products...">
+<label for="cat">Category</label><select id="cat"></select>
+<label for="price">Max price: <output id="priceOut"></output></label><input id="price" type="range" min="0" max="150" step="5" value="150">
+<label for="rate">Minimum rating</label><select id="rate"><option value="0">All ratings</option><option value="4.5">4.5★ & up</option><option value="4">4★ & up</option><option value="3">3★ & up</option></select>
+<label for="sort">Sort by</label><select id="sort"><option value="featured">Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="rating">Top Rated</option><option value="discount">Biggest Discount</option><option value="name">Name A–Z</option></select>
+<button class="btn ghost" id="reset">Reset filters</button></aside>
+<div><p id="resultCount" class="muted"></p><div id="shopGrid" class="grid products"></div></div></div></section>
+</main>
+<footer id="siteFooter" class="site-footer"></footer>
+<button id="toTop" class="to-top" aria-label="Scroll to top" hidden>↑</button>
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-label="Dialog"><div class="modal-box"><button class="modal-close" data-close aria-label="Close dialog">✕</button><div id="modalBody"></div></div></div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>

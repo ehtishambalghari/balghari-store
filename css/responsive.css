@@ -1,0 +1,18 @@
+/* Balghari Store - responsive breakpoints */
+@media (max-width:992px){
+  .hero-in,.detail{grid-template-columns:1fr}.hero-img{order:-1}
+  .shop-layout,.cart-layout{grid-template-columns:1fr}.filters,.summary{position:static}
+  .foot{grid-template-columns:1fr 1fr}
+}
+@media (max-width:768px){
+  .burger{display:inline-grid}
+  .nav{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:var(--card);border-bottom:1px solid var(--border);padding:.5rem 4%}
+  .nav.open{display:flex}.nav a{padding:.8rem 0;border-bottom:1px solid var(--border)}
+  .logo span{font-size:1rem}.qv{grid-template-columns:1fr}
+  .cart-item{grid-template-columns:70px 1fr auto;grid-template-areas:"i n r" "q q t"}.cart-item img{width:70px;height:70px}
+  .row2{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  .grid.products{grid-template-columns:1fr 1fr;gap:.7rem}.pbody{padding:.7rem}.actions .btn.sm{padding:.5rem .3rem;font-size:.8rem}
+  .foot{grid-template-columns:1fr}h1{font-size:1.6rem}.toasts{left:20px}.hero{padding:2.5rem 0}
+}

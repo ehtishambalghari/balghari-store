@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login / Register | Balghari Store</title>
+<meta name="description" content="Login or create your Balghari Store account.">
+<meta name="keywords" content="computer accessories, mouse, keyboard, SSD, hard drive, headphones, webcam, gaming, Balghari Store">
+<meta property="og:title" content="Login / Register | Balghari Store">
+<meta property="og:description" content="Login or create your Balghari Store account.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header id="siteHeader" class="site-header"></header>
+<main id="main">
+<section class="container section"><div class="card auth"><div class="tabs" role="tablist"><button class="tab active" data-tab="login" role="tab">Login</button><button class="tab" data-tab="register" role="tab">Register</button></div>
+<form id="loginForm"><label for="lemail">Email</label><input id="lemail" type="email" required><label for="lpass">Password</label><input id="lpass" type="password" required minlength="6"><button class="btn block">Login</button></form>
+<form id="registerForm" hidden><label for="rname">Full name</label><input id="rname" required><label for="remail">Email</label><input id="remail" type="email" required><label for="rpass">Password (min 6)</label><input id="rpass" type="password" required minlength="6"><button class="btn block">Create Account</button></form>
+<p class="muted small">Demo only: accounts are saved in your browser's localStorage, not on a server.</p></div></section>
+</main>
+<footer id="siteFooter" class="site-footer"></footer>
+<button id="toTop" class="to-top" aria-label="Scroll to top" hidden>↑</button>
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-label="Dialog"><div class="modal-box"><button class="modal-close" data-close aria-label="Close dialog">✕</button><div id="modalBody"></div></div></div>
+<div id="toasts" class="toasts" aria-live="polite"></div>
+<script src="js/products.js"></script>
+<script src="js/script.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>

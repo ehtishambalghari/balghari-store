@@ -1,0 +1,12 @@
+/* Balghari Store - animations */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes slideIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
+@keyframes zoomIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+@keyframes pop{0%{transform:scale(0)}70%{transform:scale(1.15)}100%{transform:scale(1)}}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}.reveal.show{opacity:1;transform:none}
+.hero-text{animation:fadeUp .8s ease both}.hero-img{animation:fadeUp .8s .2s ease both}.hero-img img{animation:float 5s ease-in-out infinite}
+.toast{animation:slideIn .3s ease}.toast.out{opacity:0;transform:translateX(40px);transition:.3s}
+.modal:not([hidden]) .modal-box{animation:zoomIn .25s ease}.check{animation:pop .5s ease}.success,.detail,.auth{animation:fadeUp .6s ease both}
+.count{animation:pop .3s ease}.nav.open{animation:fadeUp .25s ease}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
